@@ -1,7 +1,20 @@
-//Create a function called randomRange that takes a range myMin and myMax and
-// returns a random whole number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
-function randomRange(myMin, myMax) {
-  // Only change code below this line
-  return Math.floor(Math.random() * ((myMax-myMin+1)) + myMin);
-  // Only change code above this line
+//ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+//
+// If the function is passed a valid PIN string, return true, else return false.
+//
+// Examples (Input --> Output)
+// "1234"   -->  true
+// "12345"  -->  false
+// "a234"   -->  false
+function validatePIN (pin) {
+  let res=true;
+  if (pin.length==4||pin.length==6){
+    {for(let i in pin){
+      if(pin[i]>=0&&pin[i]!=' '&&pin[i]!='\n'){res=true;continue;}
+      else res=false; break;
+    }
+    }
+  }
+  else res=false;
+  return res;
 }
