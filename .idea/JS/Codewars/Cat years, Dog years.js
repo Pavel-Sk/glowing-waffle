@@ -20,3 +20,10 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   if (humanYears>3)  catYears=28+4*(humanYears-3),DogYears=29+5*(humanYears-3);
   return [humanYears,catYears,DogYears];
 }
+//function a (humanYears) {
+//   if (humanYears==1) var catYears=15,DogYears=15;
+//   if (humanYears==2) catYears=24,DogYears=24;
+//   if (humanYears==3) catYears=28,DogYears=29;
+//   if (humanYears>3)  catYears=28+4*(humanYears-3),DogYears=29+5*(humanYears-3);
+//   return 'Прошло обычных лет: '+humanYears+' Возраст кошачий: '+catYears+' Возраст собачий: '+DogYears;
+// }
