@@ -12,3 +12,18 @@
 // 1 --> 1 --> "1.00"
 // 2 --> 1 + 1/4 --> "1.25"
 // 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
+function SeriesSum(n)
+{
+  let res=0;
+  let count=4;
+  if (n==0)return '0.00';
+  if (n==1)return '1.00';
+  if (n>1){
+    for(let i=1;i<n;i++){
+      res+=1/count;
+      count+=3;
+    }
+  }
+  res+=1;
+  return parseFloat(res).toFixed(2)
+}
