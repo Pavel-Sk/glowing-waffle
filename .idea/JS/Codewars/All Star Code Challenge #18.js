@@ -13,3 +13,10 @@
 //
 // The first argument can be an empty string
 // The second string argument will always be of length 1
+function strCount(str, letter){
+  let res=0;
+  for (let i in str){
+    if (str[i]==letter)res++
+  }
+  return res;
+}
