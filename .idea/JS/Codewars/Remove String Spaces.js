@@ -6,4 +6,4 @@ function noSpace(x){
       result += x[index];
     }
   }
-  return result;
+  return result;}
