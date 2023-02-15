@@ -14,3 +14,4 @@
 // Input: [0, -1, -5]
 // Output: "even"
 // Have fun!
+const oddOrEven=array=> array=='' || array.reduce((a, b) => a+b)%2==0 ? 'even' : 'odd'
