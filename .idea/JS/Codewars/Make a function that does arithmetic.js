@@ -24,4 +24,4 @@ function arithmetic(a, b, operator){
   }
   else{
     return a/b;
-  }
+  } 
