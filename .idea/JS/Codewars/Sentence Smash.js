@@ -3,3 +3,4 @@
 //
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+const smash=(words)=>words.join(' ');
