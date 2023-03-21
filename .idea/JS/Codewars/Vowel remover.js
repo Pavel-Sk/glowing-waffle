@@ -7,3 +7,13 @@
 // "HELLO"     -->  "HELLO"
 // don't worry about uppercase vowels
 // y is not considered a vowel for this kata
+function shortcut (string) {
+  let res = ''
+  for(let i in string){
+    if(string[i]!='a'&&string[i]!='e'&&string[i]!='i'&&string[i]!='o'&&string[i]!='u'){
+      res+=string[i]
+    }
+  }
+  return res;
+}
+console.log(shortcut('hello'));
