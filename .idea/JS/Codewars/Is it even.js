@@ -8,3 +8,4 @@
 //
 //     Floats with decimal part non equal to zero are considered UNeven for this kata.
 //
+const testEven=(n)=> n%2==0?true:false;
